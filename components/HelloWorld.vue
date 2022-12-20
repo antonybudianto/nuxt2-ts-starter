@@ -2,7 +2,10 @@
 import { ref } from 'vue'
 
 defineProps({
-  title: String,
+  title: {
+    type: String,
+    default: '',
+  },
 })
 
 const emit = defineEmits(['onClick'])
@@ -24,10 +27,10 @@ function handleClickHello(value: string) {
     </div>
     <div>Name: {{ names }}</div>
     <input
+      v-model="textInput"
       class="inputTxt"
       type="text"
       placeholder="Type here..."
-      v-model="textInput"
     />
     <div>input: {{ textInput }}</div>
     <slot />
