@@ -23,24 +23,22 @@ specifiers:
   vitest: ^0.26.2
   vue: ^2.7.10
   vue-server-renderer: ^2.7.10
-  vue-template-compiler: ^2.7.10
 
 dependencies:
   core-js: 3.26.1
   nuxt: 2.15.8_4f89eadfc1a8e167f29212702d083f10
   vue: 2.7.14
   vue-server-renderer: 2.7.14
-  vue-template-compiler: 2.7.14
 
 devDependencies:
   '@babel/eslint-parser': 7.19.1_eslint@8.29.0
   '@nuxt/test-utils': 3.0.0_vue@2.7.14
   '@nuxt/types': 2.15.8
-  '@nuxt/typescript-build': 2.1.0_32324bb224d9dfdd4f4909c7f469a26f
+  '@nuxt/typescript-build': 2.1.0_@nuxt+types@2.15.8+eslint@8.29.0
   '@nuxtjs/eslint-config-typescript': 11.0.0_eslint@8.29.0
   '@nuxtjs/eslint-module': 3.1.0_eslint@8.29.0
   '@nuxtjs/tailwindcss': 5.3.5
-  '@testing-library/vue': 5.8.3_89e0a72d8ab51b7caf18bde54b01148a
+  '@testing-library/vue': 5.8.3_vue@2.7.14
   '@vitejs/plugin-vue2': 1.1.2_vue@2.7.14
   babel-core: 7.0.0-bridge.0
   eslint: 8.29.0
@@ -2015,14 +2013,14 @@ packages:
       - webpack
     dev: true
 
-  /@nuxt/typescript-build/2.1.0_32324bb224d9dfdd4f4909c7f469a26f:
+  /@nuxt/typescript-build/2.1.0_@nuxt+types@2.15.8+eslint@8.29.0:
     resolution: {integrity: sha512-7TLMpfzgOckf3cBkzoPFns6Xl8FzY6MoFfm/5HUE47QeTWAdOG9ZFxMrVhHWieZHYUuV+k6byRtaRv4S/3R8zA==}
     peerDependencies:
       '@nuxt/types': '>=2.13.1'
     dependencies:
       '@nuxt/types': 2.15.8
       consola: 2.15.3
-      fork-ts-checker-webpack-plugin: 6.5.2_6e127ff1fae2f23aaba715d03bf93f90
+      fork-ts-checker-webpack-plugin: 6.5.2_eslint@8.29.0+typescript@4.2.4
       ts-loader: 8.4.0_typescript@4.2.4
       typescript: 4.2.4
     transitivePeerDependencies:
@@ -2318,7 +2316,7 @@ packages:
       pretty-format: 26.6.2
     dev: true
 
-  /@testing-library/vue/5.8.3_89e0a72d8ab51b7caf18bde54b01148a:
+  /@testing-library/vue/5.8.3_vue@2.7.14:
     resolution: {integrity: sha512-M6+QqP1xuFHixKOeXF9pCLbtiyJZRKfJRP+unBf6Ljm7aS1V2CSS95oTetFoblaj0W1+AC9XJgwmUDtlLoaakQ==}
     engines: {node: '>10.18'}
     peerDependencies:
@@ -2327,9 +2325,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.6
       '@testing-library/dom': 7.31.2
-      '@vue/test-utils': 1.3.3_89e0a72d8ab51b7caf18bde54b01148a
+      '@vue/test-utils': 1.3.3_vue@2.7.14
       vue: 2.7.14
-      vue-template-compiler: 2.7.14
     dev: true
 
   /@tootallnate/once/2.0.0:
@@ -2969,7 +2966,7 @@ packages:
       - whiskers
     dev: false
 
-  /@vue/test-utils/1.3.3_89e0a72d8ab51b7caf18bde54b01148a:
+  /@vue/test-utils/1.3.3_vue@2.7.14:
     resolution: {integrity: sha512-DmZkKrH5/MSkrU0hhHhv5+aOXcEJSaOhutKMOh2viuiLiMaFeOLPiTEvtegLunO3rXBagzHO681qW1sNMaB1sQ==}
     peerDependencies:
       vue: 2.x
@@ -2979,7 +2976,6 @@ packages:
       lodash: 4.17.21
       pretty: 2.0.0
       vue: 2.7.14
-      vue-template-compiler: 2.7.14
     dev: true
 
   /@webassemblyjs/ast/1.9.0:
@@ -4808,6 +4804,7 @@ packages:
 
   /de-indent/1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
+    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -5997,7 +5994,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /fork-ts-checker-webpack-plugin/6.5.2_6e127ff1fae2f23aaba715d03bf93f90:
+  /fork-ts-checker-webpack-plugin/6.5.2_eslint@8.29.0+typescript@4.2.4:
     resolution: {integrity: sha512-m5cUmF30xkZ7h4tWUgTAcEaKmUW7tfyUyTqNNOz7OxWJ0v1VWKTcOvH8FWHUwSjlW/356Ijc9vi3XfcPstpQKA==}
     engines: {node: '>=10', yarn: '>=1.0.0'}
     peerDependencies:
@@ -6026,7 +6023,6 @@ packages:
       semver: 7.3.8
       tapable: 1.1.3
       typescript: 4.2.4
-      vue-template-compiler: 2.7.14
     dev: true
 
   /form-data/4.0.0:
@@ -6431,6 +6427,7 @@ packages:
   /he/1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+    dev: false
 
   /hex-color-regex/1.1.0:
     resolution: {integrity: sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==}
@@ -11496,6 +11493,7 @@ packages:
     dependencies:
       de-indent: 1.0.2
       he: 1.2.0
+    dev: false
 
   /vue-template-es2015-compiler/1.9.1:
     resolution: {integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==}
